@@ -23,6 +23,7 @@ btnGenera.addEventListener('click', function () {
 
     let costoAlKm = 0.21;
     let ticketPrice = userDistance * costoAlKm;
+    console.log(prezzoSenzaSconto)
 
 
     if (userAge < 18) {
@@ -41,14 +42,15 @@ btnGenera.addEventListener('click', function () {
 
 });
 
+let num = ticketPrice;
+let n = num.toFixed(2);
+console.log(ticketPrice);
+document.getElementById('prezzo-scontato').innerHTML = ticketPrice;
+
 // ora calcolo il prezzo totale del viaggio
 
 // calcolo il prezzo del biglietto in base ai km (0.21€ al km)
 
-let costoAlKm = 0.21;
-let ticketPrice = userDistance * costoAlKm;
-console.log(ticketPrice);
-document.getElementById('prezzo-senza-sconto').innerHTML = ticketPrice;
 
 
 // const userNumber = parseInt(prompt('Inserisci un numero'));
