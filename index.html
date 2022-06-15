@@ -17,17 +17,17 @@
     <main class="bg-danger">
         <div class="container bg-white">
             <div class="row">
-                <!-- <div class="col-4">
+                <div class="col-4">
                     <h4 class="text-danger m-3">Nome e cognome</h4>
                     <input type="text" id="user-name" class="form-control m-3" aria-label="First name">
-                </div> -->
+                </div>
                 <div class="col-4">
                     <h4 class="text-danger m-3">Distanza da percorrere</h4>
                     <input type="text" id="km" class="form-control m-3" aria-label="First name">
                 </div>
                 <div class="col-4">
                     <h4 class="text-danger m-3">Fascia d'età</h4>
-                    <input type="text" class="form-control m-3" aria-label="First name">
+                    <input type="text" id="user-age" class="form-control m-3" aria-label="First name">
                 </div>
 
                 <div class="col-6">
@@ -35,6 +35,35 @@
                     <button type="button" id="btn-ann" class="btn btn-secondary">Annulla</button>
                 </div>
 
+            </div>
+        </div>
+        <div class="container bg-white">
+            <div class="row">
+                <h2 class="text-dark">Dettaglio Passeggeri</h2>
+                <div class="col-5">
+                    <h3>NOME PASSEGGERO</h3>
+                    <h4 id="passenger"></h4>
+                </div>
+                <div class="col-7">
+                    <div class="row">
+                        <div class="col-3">
+                            <h4>Offerta</h4>
+                            <p>biglietto standard</p>
+                        </div>
+                        <div class="col-3">
+                            <h4>Carrozza</h4>
+                            <p>5</p>
+                        </div>
+                        <div class="col-3">
+                            <h4>Codice CP</h4>
+                            <p>92911</p>
+                        </div>
+                        <div class="col-3">
+                            <h4>Costo biglietto</h4>
+                            <p id="ticket-cost"></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
