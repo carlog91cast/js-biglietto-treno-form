@@ -40,13 +40,19 @@ btnGenera.addEventListener('click', function () {
         ticketPrice = ticketPrice * 65 / 100;
     }
 
+    // random numeber (carrozza; cp)
+
+    let carrozza = Math.floor(Math.random() * 9) +1;
+    let cp = Math.floor(Math.random() *  90000 +1);
+
     document.getElementById('passenger').innerHTML = userName;
     document.getElementById('ticket-cost').innerHTML = ticketPrice.toFixed(2);
-
-
-
+    document.getElementById('carrozza').innerHTML = carrozza;
+    document.getElementById('cp').innerHTML = cp
 
 });
+
+
 
 
 
