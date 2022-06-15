@@ -43,7 +43,7 @@ btnGenera.addEventListener('click', function () {
     // random numeber (carrozza; cp)
 
     let carrozza = Math.floor(Math.random() * 9) +1;
-    let cp = Math.floor(Math.random() *  90000 +1);
+    let cp = Math.floor(Math.random() *  100000 +1);
 
     document.getElementById('passenger').innerHTML = userName;
     document.getElementById('ticket-cost').innerHTML = ticketPrice.toFixed(2);
