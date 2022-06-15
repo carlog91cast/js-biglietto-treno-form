@@ -5,7 +5,7 @@ const userDistance = prompt('inserisci la percorrenza in km');
 document.getElementById('go-to').innerHTML = userDistance;
 // chiedo all'utente la sua età
 
-const userAge = parseInt (prompt ('inserisci la tua età')) 
+const userAge = parseInt(prompt('inserisci la tua età'))
 document.getElementById('age').innerHTML = userAge;
 
 // ora calcolo il prezzo totale del viaggio
@@ -28,17 +28,17 @@ document.getElementById('prezzo-senza-sconto').innerHTML = ticketPrice;
 // definisco in base all'età dell'utente se esso sia maggiorenne o over 65
 // va applicato poi uno sconto del 20% per i minorenni e del 40% per gli over 65.
 
-if ( userAge < 18) {
+if (userAge < 18) {
     console.log('è minorenne');
     ticketPrice = ticketPrice * 80 / 100;
-} else if ( userAge > 65) {
+} else if (userAge > 65) {
     console.log('over 65');
     ticketPrice = ticketPrice * 60 / 100;
 }
-    let num = ticketPrice;
-    let n = num.toFixed(2);
-    console.log(ticketPrice);
-    document.getElementById('prezzo-scontato').innerHTML = ticketPrice;
+let num = ticketPrice;
+let n = num.toFixed(2);
+console.log(ticketPrice);
+document.getElementById('prezzo-scontato').innerHTML = ticketPrice;
 
 
 
